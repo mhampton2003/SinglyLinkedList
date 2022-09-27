@@ -110,12 +110,14 @@ public class SLL {
 		sll2.print();
 	}
 	
+	//play with reverse method here - fix order of merged list
 	//merge with another ordered list
 	public void merge(SLL aList) {
 		Node temp = new Node(head.data);
 		temp = head;
 				
 		for (int i = counter; i > 0; i--) {
+			//aList.reverse();
 			aList.insert(temp.data);
 			temp = temp.next;
 		}
