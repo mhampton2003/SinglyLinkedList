@@ -1,0 +1,57 @@
+public class Driver {
+
+	public static void main(String[] args) {
+		SLL sll = new SLL();
+		SLL sll2 = new SLL();
+		
+		System.out.println("Creating List 1 (sll)");
+		sll.insert(10);
+		sll.insert(8);
+		sll.insert(3);
+		sll.insert(9);
+		sll.print();
+		
+		System.out.println("");
+		
+		System.out.println("Creating List 2 (sll2)");
+		sll2.insert(5);
+		sll2.insert(3);
+		sll2.insert(1);
+		sll2.print();
+		
+		System.out.println("");
+		
+		System.out.println("Testing reverse method:");
+		sll.reverse();
+		
+		System.out.println("");
+		
+		System.out.println("Testing front method:");
+		sll.front();
+		
+		System.out.println("");
+		
+		System.out.println("Testing back method:");
+		sll.back();
+		
+		System.out.println("");
+		
+		System.out.println("Testing pop_front method:");
+		sll.pop_front();
+		sll.print();
+
+		System.out.println("");
+		
+		System.out.println("Testing pop_back method:");
+		sll2.pop_back();
+		sll2.print();
+		
+		System.out.println("");
+		
+		System.out.println("Testing merge method:");
+		sll.merge(sll2);
+		
+
+	}
+
+}
