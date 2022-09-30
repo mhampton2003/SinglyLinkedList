@@ -5,18 +5,19 @@ public class Driver {
 		SLL sll2 = new SLL();
 		
 		System.out.println("Creating List 1 (sll)");
-		sll.insert(10);
-		sll.insert(8);
-		sll.insert(3);
-		sll.insert(9);
+		sll.insert(30);
+		sll.insert(25);
+		sll.insert(20);
+		sll.insert(15);
+		sll.insert(29);
 		sll.print();
 		
 		System.out.println("");
 		
 		System.out.println("Creating List 2 (sll2)");
 		sll2.insert(5);
+		sll2.insert(4);
 		sll2.insert(3);
-		sll2.insert(1);
 		sll2.print();
 		
 		System.out.println("");
@@ -38,13 +39,11 @@ public class Driver {
 		
 		System.out.println("Testing pop_front method:");
 		sll.pop_front();
-		sll.print();
 
 		System.out.println("");
 		
 		System.out.println("Testing pop_back method:");
 		sll2.pop_back();
-		sll2.print();
 		
 		System.out.println("");
 		
